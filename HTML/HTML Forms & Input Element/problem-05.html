@@ -1,0 +1,229 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Checkout</title>
+</head>
+
+<body>
+
+    <h1>TechStore - Checkout</h1>
+
+    <p>
+        Thank you for shopping with TechStore! Please enter your delivery
+        and payment details below to complete your order.
+    </p>
+
+    <h2>Selected Products</h2>
+
+    <table border="1">
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>Wireless Headphones</td>
+            <td>1</td>
+            <td>₹1,999</td>
+            <td>₹1,999</td>
+        </tr>
+
+        <tr>
+            <td>Mechanical Keyboard</td>
+            <td>1</td>
+            <td>₹2,499</td>
+            <td>₹2,499</td>
+        </tr>
+
+        <tr>
+            <td>Wireless Mouse</td>
+            <td>2</td>
+            <td>₹799</td>
+            <td>₹1,598</td>
+        </tr>
+
+        <tr>
+            <th colspan="3">Grand Total</th>
+            <th>₹6,096</th>
+        </tr>
+    </table>
+
+    <br>
+
+    <img src="data:image/jpeg;base64,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"
+        alt="Online Shopping Products" width="300">
+
+
+    <h2>1. Customer Information</h2>
+
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" minlength="3" maxlength="50"
+        autocomplete="name" required>
+    <br><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+    <br><br>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" maxlength="10"
+        autocomplete="tel" required>
+    <br><br>
+
+
+    <h2>2. Delivery Address</h2>
+
+    <label for="address">House/Street Address:</label>
+    <input type="text" id="address" name="address" placeholder="House no., Street name" maxlength="100"
+        autocomplete="street-address" required>
+    <br><br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" placeholder="Enter city" maxlength="40" required>
+    <br><br>
+
+    <label for="state">State:</label>
+    <select id="state" name="state" required>
+        <option value="">-- Select State --</option>
+        <option value="uttar-pradesh">Uttar Pradesh</option>
+        <option value="delhi">Delhi</option>
+        <option value="haryana">Haryana</option>
+        <option value="rajasthan">Rajasthan</option>
+        <option value="maharashtra">Maharashtra</option>
+        <option value="punjab">Punjab</option>
+        <option value="gujarat">Gujarat</option>
+    </select>
+    <br><br>
+
+    <label for="postal">Postal Code:</label>
+    <input type="text" id="postal" name="postal" placeholder="6-digit postal code" pattern="[0-9]{6}" maxlength="6"
+        required>
+    <br><br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+        <option value="">-- Select Country --</option>
+        <option value="india">India</option>
+        <option value="usa">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
+    </select>
+    <br><br>
+
+
+    <h2>3. Delivery Method</h2>
+
+    <input type="radio" id="standard" name="delivery" value="standard" required>
+    <label for="standard">Standard Delivery (5-7 days)</label>
+    <br>
+
+    <input type="radio" id="express" name="delivery" value="express">
+    <label for="express">Express Delivery (2-3 days)</label>
+    <br>
+
+    <input type="radio" id="sameday" name="delivery" value="same-day">
+    <label for="sameday">Same Day Delivery</label>
+    <br><br>
+
+
+    <h2>4. Payment Method</h2>
+
+    <input type="radio" id="card" name="payment" value="card" required>
+    <label for="card">Credit/Debit Card</label>
+    <br>
+
+    <input type="radio" id="cod" name="payment" value="cash-on-delivery">
+    <label for="cod">Cash on Delivery</label>
+    <br>
+
+    <input type="radio" id="upi" name="payment" value="upi">
+    <label for="upi">UPI / Online Payment</label>
+    <br><br>
+
+
+    <h2>5. Card Payment Details</h2>
+
+    <label for="cardholder">Card Holder Name:</label>
+    <input type="text" id="cardholder" name="cardholder" placeholder="Name on card" minlength="3" maxlength="50">
+    <br><br>
+
+    <label for="cardnumber">Card Number:</label>
+    <input type="text" id="cardnumber" name="cardnumber" placeholder="16-digit card number" pattern="[0-9]{16}"
+        maxlength="16" autocomplete="cc-number">
+    <br><br>
+
+    <label for="expiry">Expiry Date:</label>
+    <input type="month" id="expiry" name="expiry" autocomplete="cc-exp">
+    <br><br>
+
+    <label for="security">Security Code:</label>
+    <input type="password" id="security" name="security" placeholder="3-digit CVV" pattern="[0-9]{3}" maxlength="3"
+        autocomplete="cc-csc">
+    <br><br>
+
+
+    <h2>6. Billing Address</h2>
+
+    <input type="checkbox" id="sameaddress" name="sameaddress" value="same-as-delivery">
+    <label for="sameaddress">
+        Billing address is the same as delivery address
+    </label>
+
+    <br><br>
+
+
+    <h2>7. Delivery Instructions</h2>
+
+    <label for="instructions">Additional Delivery Instructions:</label>
+    <br>
+    <textarea id="instructions" name="instructions" rows="5" cols="50" maxlength="300"
+        placeholder="Example: Please leave the package with the security guard."></textarea>
+
+    <br><br>
+
+
+    <h2>8. Coupon / Promo Code</h2>
+
+    <label for="coupon">Promo Code:</label>
+    <input type="text" id="coupon" name="coupon" placeholder="Enter promo code" maxlength="15">
+
+    <br><br>
+
+
+    <h2>9. Order Confirmation</h2>
+
+    <input type="checkbox" id="terms" name="terms" value="accepted" required>
+    <label for="terms">
+        I agree to the Terms & Conditions.
+    </label>
+
+    <br>
+
+    <input type="checkbox" id="confirmation" name="confirmation" value="confirmed" required>
+    <label for="confirmation">
+        I confirm that all the information provided is correct.
+    </label>
+
+    <br><br>
+
+
+    <input type="submit" value="Place Order">
+
+    <input type="reset" value="Reset">
+
+    <br>
+
+    <p>
+        <a href="products.html" target="_blank">Continue Shopping</a>
+    </p>
+
+</body>
+
+</html>

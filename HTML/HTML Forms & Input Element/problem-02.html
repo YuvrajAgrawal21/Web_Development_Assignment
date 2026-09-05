@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hospital Appointment Booking</title>
+</head>
+
+<body>
+
+    <h1>City Care Hospital - Appointment Booking</h1>
+
+    <p>
+        Welcome to City Care Hospital. Please fill out the appointment
+        form below to request an appointment with one of our doctors.
+    </p>
+
+    <hr>
+
+    <h2>Patient Information</h2>
+
+    <label for="patient_name">Patient Name:</label>
+    <input type="text" id="patient_name" name="patient_name" placeholder="Enter your full name" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="email" required>
+    <br><br>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile_number" placeholder="Enter 10-digit mobile number"
+        pattern="[6-9]{1}[0-9]{9}" maxlength="10" required>
+    <br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="date_of_birth" required>
+    <br><br>
+
+
+    <h2>Appointment Details</h2>
+
+    <label for="appointment_date">Appointment Date:</label>
+    <input type="date" id="appointment_date" name="appointment_date" required>
+    <br><br>
+
+    <label for="appointment_time">Appointment Time:</label>
+    <input type="time" id="appointment_time" name="appointment_time" min="09:00" max="18:00" required>
+    <br><br>
+
+    <label for="doctor">Select Doctor:</label>
+    <select id="doctor" name="doctor" required>
+        <option value="">-- Select Doctor --</option>
+        <option value="dr_rahul_sharma">
+            Dr. Rahul Sharma - Cardiologist
+        </option>
+        <option value="dr_neha_verma">
+            Dr. Neha Verma - Dermatologist
+        </option>
+        <option value="dr_amit_gupta">
+            Dr. Amit Gupta - Orthopedic
+        </option>
+        <option value="dr_pooja_singh">
+            Dr. Pooja Singh - Pediatrician
+        </option>
+        <option value="dr_arjun_mehta">
+            Dr. Arjun Mehta - General Physician
+        </option>
+    </select>
+
+    <br><br>
+
+    <h3>Visit Type</h3>
+
+    <input type="radio" id="new_patient" name="visit_type" value="New Patient" required>
+    <label for="new_patient">New Patient</label>
+
+    <input type="radio" id="follow_up" name="visit_type" value="Follow-up">
+    <label for="follow_up">Follow-up</label>
+
+    <input type="radio" id="consultation" name="visit_type" value="Consultation">
+    <label for="consultation">Consultation</label>
+
+    <input type="radio" id="emergency" name="visit_type" value="Emergency">
+    <label for="emergency">Emergency</label>
+
+    <br><br>
+
+    <h3>Preferred Communication Method</h3>
+
+    <input type="radio" id="communication_email" name="communication_method" value="Email" required>
+    <label for="communication_email">Email</label>
+
+    <input type="radio" id="communication_phone" name="communication_method" value="Phone">
+    <label for="communication_phone">Phone</label>
+
+    <input type="radio" id="communication_sms" name="communication_method" value="SMS">
+    <label for="communication_sms">SMS</label>
+
+    <br><br>
+
+    <label for="patient_id">Patient ID (Optional):</label>
+    <input type="text" id="patient_id" name="patient_id" placeholder="Enter patient ID" maxlength="20">
+
+    <br><br>
+
+    <label for="reason">Reason for Visit / Additional Information:</label>
+    <br>
+    <textarea id="reason" name="reason_for_visit" rows="5" cols="45" placeholder="Describe the reason for your visit"
+        minlength="5" maxlength="300" required></textarea>
+
+    <br><br>
+
+    <h3>Appointment Terms</h3>
+
+    <input type="checkbox" id="terms" name="appointment_terms" value="accepted" required>
+
+    <label for="terms">
+        I agree to the hospital's appointment terms and confirm
+        that the information provided is correct.
+    </label>
+
+    <br><br>
+
+    <input type="submit" value="Book Appointment">
+    <input type="reset" value="Reset Form">
+
+    </form>
+
+    <hr>
+
+    <h2>Clinic Timings</h2>
+
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Opening Time</th>
+            <th>Closing Time</th>
+        </tr>
+
+        <tr>
+            <td>Monday - Friday</td>
+            <td>9:00 AM</td>
+            <td>6:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Saturday</td>
+            <td>9:00 AM</td>
+            <td>2:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Sunday</td>
+            <td>Emergency Only</td>
+            <td>24 Hours</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <p>
+        For emergency assistance, contact:
+        <a href="tel:+911234567890">Emergency Helpline</a>
+    </p>
+
+</body>
+
+</html>
