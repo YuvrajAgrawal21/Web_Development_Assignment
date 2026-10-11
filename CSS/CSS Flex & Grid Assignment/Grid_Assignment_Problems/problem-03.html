@@ -1,0 +1,86 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Problem 3</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 90px 90px;
+            grid-template-areas:
+                "A A B E"
+                "C D B E";
+            gap: 12px;
+            max-width: 570px;
+            margin: 0 auto;
+        }
+
+        .box {
+            background-color: #424242;
+            color: white;
+            border-radius: 7px;
+            padding: 20px;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .A {
+            grid-area: A;
+        }
+
+        .B {
+            grid-area: B;
+        }
+
+        .C {
+            grid-area: C;
+        }
+
+        .D {
+            grid-area: D;
+        }
+
+        .E {
+            grid-area: E;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box A">A</div>
+        <div class="box B">B</div>
+        <div class="box C">C</div>
+        <div class="box D">D</div>
+        <div class="box E">E</div>
+    </div>
+
+</body>
+</html>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

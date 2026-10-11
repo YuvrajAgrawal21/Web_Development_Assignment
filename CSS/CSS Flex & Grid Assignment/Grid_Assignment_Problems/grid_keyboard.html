@@ -1,0 +1,170 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Grid Assignment</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #08b8c9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .keyboard {
+            width: 100%;
+            max-width: 700px;
+            padding: 18px;
+            background: #202528;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px #087783;
+            display: grid;
+            gap: 9px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(13, minmax(0, 1fr));
+            gap: 7px;
+        }
+
+        .key {
+            min-width: 0;
+            height: 34px;
+            background: #30383c;
+            color: #00bcd4;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 11px;
+            box-shadow: 0 2px 4px #111719;
+        }
+
+        .wide-2 {
+            grid-column: span 2;
+        }
+
+        .wide-3 {
+            grid-column: span 3;
+        }
+
+        .wide-4 {
+            grid-column: span 4;
+        }
+
+        .space {
+            grid-column: span 4;
+        }
+
+        @media (max-width: 520px) {
+            .keyboard {
+                padding: 9px;
+                gap: 6px;
+            }
+
+            .row {
+                gap: 3px;
+            }
+
+            .key {
+                height: 27px;
+                font-size: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="keyboard">
+
+        <!-- Row 1: Number keys -->
+        <div class="row">
+            <div class="key">~</div>
+            <div class="key">1</div>
+            <div class="key">2</div>
+            <div class="key">3</div>
+            <div class="key">4</div>
+            <div class="key">5</div>
+            <div class="key">6</div>
+            <div class="key">7</div>
+            <div class="key">8</div>
+            <div class="key">9</div>
+            <div class="key">0</div>
+            <div class="key wide-2">Delete</div>
+        </div>
+
+        <!-- Row 2: QWERTY -->
+        <div class="row">
+            <div class="key wide-2">Tab</div>
+            <div class="key">Q</div>
+            <div class="key">W</div>
+            <div class="key">E</div>
+            <div class="key">R</div>
+            <div class="key">T</div>
+            <div class="key">Y</div>
+            <div class="key">U</div>
+            <div class="key">I</div>
+            <div class="key">O</div>
+            <div class="key">P</div>
+            <div class="key">\\</div>
+        </div>
+
+        <!-- Row 3: Home row -->
+        <div class="row">
+            <div class="key wide-2">Caps</div>
+            <div class="key">A</div>
+            <div class="key">S</div>
+            <div class="key">D</div>
+            <div class="key">F</div>
+            <div class="key">G</div>
+            <div class="key">H</div>
+            <div class="key">J</div>
+            <div class="key">K</div>
+            <div class="key">L</div>
+            <div class="key wide-2">Enter</div>
+        </div>
+
+        <!-- Row 4: Bottom letters -->
+        <div class="row">
+            <div class="key wide-2">Shift</div>
+            <div class="key">Z</div>
+            <div class="key">X</div>
+            <div class="key">C</div>
+            <div class="key">V</div>
+            <div class="key">B</div>
+            <div class="key">N</div>
+            <div class="key">M</div>
+            <div class="key wide-4">Shift</div>
+        </div>
+
+        <!-- Row 5: Control keys -->
+        <div class="row">
+            <div class="key">⌘</div>
+            <div class="key">Ctrl</div>
+            <div class="key">Option</div>
+            <div class="key">Alt</div>
+            <div class="key space">Space</div>
+            <div class="key">Alt</div>
+            <div class="key">Option</div>
+            <div class="key">←</div>
+            <div class="key">→</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
