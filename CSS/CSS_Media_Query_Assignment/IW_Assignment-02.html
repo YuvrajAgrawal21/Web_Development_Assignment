@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IW Assignment 2 - Specialists and Services</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: #fff;
+        }
+
+        .specialists {
+            padding: 45px 6%;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 35px;
+            color: #252525;
+        }
+
+        .doctor-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .doctor-card {
+            border: 1px solid #e5e5e5;
+            background: white;
+            padding-bottom: 20px;
+            box-shadow: 0 3px 12px #00000012;
+        }
+
+        .doctor-card img {
+            display: block;
+            width: 100%;
+            height: 210px;
+        }
+
+        .doctor-card h3 {
+            margin: 18px 8px 6px;
+        }
+
+        .doctor-card .speciality {
+            color: #159e91;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .doctor-card p {
+            padding: 0 14px;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            padding: 0 8px;
+        }
+
+        .buttons a {
+            padding: 10px 12px;
+            color: white;
+            background: #159e91;
+            font-size: 12px;
+        }
+
+        .buttons a:last-child {
+            background: #f0a34a;
+        }
+
+        .services {
+            padding: 45px 7%;
+            background: #f6f8f9;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .service {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 20px;
+            background: white;
+        }
+
+        .service img {
+            width: 65px;
+            height: 65px;
+            object-fit: cover;
+        }
+
+        .service h3 {
+            margin: 0 0 8px;
+            color: #159e91;
+        }
+
+        .service p {
+            margin: 0;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        @media (min-width: 601px) and (max-width: 900px) {
+            .doctor-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .services {
+                padding: 30px 5%;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .doctor-card img {
+                height: 240px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="specialists">
+        <h1>Our Specialist</h1>
+
+        <div class="doctor-grid">
+            <article class="doctor-card">
+                <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="Doctor Ethan Davis">
+                <h3>ETHAN DAVIS</h3>
+                <div class="speciality">Heart Specialist</div>
+                <p>Providing professional care and guidance for a healthier life.</p>
+                <div class="buttons">
+                    <a href="#">Know More</a>
+                    <a href="#">Book Now</a>
+                </div>
+            </article>
+
+            <article class="doctor-card">
+                <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="Doctor Dand Morris">
+                <h3>DAND MORRIS</h3>
+                <div class="speciality">Dental Specialist</div>
+                <p>Providing professional care and guidance for a healthier life.</p>
+                <div class="buttons">
+                    <a href="#">Know More</a>
+                    <a href="#">Book Now</a>
+                </div>
+            </article>
+
+            <article class="doctor-card">
+                <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="Doctor Alicia Board">
+                <h3>ALICIA BOARD</h3>
+                <div class="speciality">Skin Specialist</div>
+                <p>Providing professional care and guidance for a healthier life.</p>
+                <div class="buttons">
+                    <a href="#">Know More</a>
+                    <a href="#">Book Now</a>
+                </div>
+            </article>
+
+            <article class="doctor-card">
+                <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="Doctor Jason Limit">
+                <h3>JASON LIMIT</h3>
+                <div class="speciality">Child Specialist</div>
+                <p>Providing professional care and guidance for a healthier life.</p>
+                <div class="buttons">
+                    <a href="#">Know More</a>
+                    <a href="#">Book Now</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+
+        <div class="service-grid">
+            <article class="service">
+                <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg" alt="Dental service">
+                <div>
+                    <h3>Teeth Whitening</h3>
+                    <p>Professional care to help keep your teeth bright and healthy.</p>
+                </div>
+            </article>
+
+            <article class="service">
+                <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg" alt="Dental service">
+                <div>
+                    <h3>Dental Care</h3>
+                    <p>Regular dental care for healthy teeth and gums.</p>
+                </div>
+            </article>
+
+            <article class="service">
+                <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg" alt="Dental service">
+                <div>
+                    <h3>Oral Checkup</h3>
+                    <p>Routine checkups help maintain good oral health.</p>
+                </div>
+            </article>
+
+            <article class="service">
+                <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg" alt="Dental service">
+                <div>
+                    <h3>Teeth Cleaning</h3>
+                    <p>Cleaning helps remove plaque and maintain oral hygiene.</p>
+                </div>
+            </article>
+
+            <article class="service">
+                <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg" alt="Dental service">
+                <div>
+                    <h3>Dental Advice</h3>
+                    <p>Get guidance for everyday dental care and prevention.</p>
+                </div>
+            </article>
+
+            <article class="service">
+                <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg" alt="Dental service">
+                <div>
+                    <h3>Healthy Smile</h3>
+                    <p>Build healthy habits to protect your smile.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+</html>

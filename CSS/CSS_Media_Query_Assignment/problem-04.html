@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 4 - Grid Areas</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        nav {
+            background: yellow;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 150px);
+            grid-template-areas:
+                "left right1"
+                "left right2"
+                "left right3";
+            gap: 20px;
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .left {
+            grid-area: left;
+            background: red;
+        }
+
+        .right1 {
+            grid-area: right1;
+            background: green;
+        }
+
+        .right2 {
+            grid-area: right2;
+            background: green;
+        }
+
+        .right3 {
+            grid-area: right3;
+            background: green;
+        }
+
+        @media (min-width: 601px) and (max-width: 900px) {
+            .layout {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 220px 160px;
+                grid-template-areas:
+                    "left left left"
+                    "right1 right2 right3";
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                font-size: 27px;
+                padding: 24px;
+            }
+
+            .layout {
+                grid-template-columns: 1fr;
+                grid-template-rows: 180px repeat(3, 140px);
+                grid-template-areas:
+                    "left"
+                    "right1"
+                    "right2"
+                    "right3";
+                gap: 16px;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>Navigation</nav>
+
+    <main class="layout">
+        <div class="box left">LEFT BOX</div>
+        <div class="box right1">RIGHT BOX 1</div>
+        <div class="box right2">RIGHT BOX 2</div>
+        <div class="box right3">RIGHT BOX 3</div>
+    </main>
+</body>
+</html>
